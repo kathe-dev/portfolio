@@ -4,7 +4,7 @@ import Header from "@/components/header";
 
 export default function Home() {
   return (
-    <div className=" w-screen h-full overflow-x-hidden ">
+    <div className=" w-screen h-full  ">
       <Header />
       <div className="flex items-center justify-center w-screen h-screen">
         <div className="flex flex-col items-center justify-center">

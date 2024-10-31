@@ -74,7 +74,7 @@ const Header = () => {
       <ul className='flex md:flex-wrap md:flex-row flex-col md:w-[70vw] w-[90vw]  py-10 justify-center border-b-2 md:border-b-0 border-details'>
         {navItems.map(item => (
           <Link href={`/#${item.text}` } key={item.id} onClick={handleNav} >
-          <li className=' Heavitas text-xl md:text-3xl p-2 md:p-4 rounded-xl  cursor-pointer duration-300 text-details hover:text-details text-left md:text-center'>
+          <li className=' text-xl md:text-3xl p-2 md:p-4 rounded-xl  cursor-pointer transition-all ease-in-out duration-200 text-details hover:scale-105 hover:text-background text-left md:text-center'>
             {item.text}
           </li>
         </Link>
@@ -82,7 +82,7 @@ const Header = () => {
       </ul>
       
       <div className=' md:w-[30vw] flex flex-col  w-[90vw] py-5 md:py-10    '>
-        <h2 className='Clinton-Extra-Bold text-2xl md:text-3xl p-2 md:p-4 rounded-xl    text-details text-left'>
+        <h2 className='font-bold  text-2xl md:text-3xl p-2 md:p-4 rounded-xl    text-details text-left'>
           Social
         </h2>
 
@@ -92,7 +92,7 @@ const Header = () => {
               href="https://www.linkedin.com/in/kathdev/"
               rel="noreferrer"
               target="_blank"
-              className="Clinton text-lg md:text-xl p-2 md:p-4 rounded-xl cursor-pointer hover:underline   text-details text-left"
+              className=" text-lg md:text-xl p-2 md:p-4 rounded-xl cursor-pointer hover:underline   text-details text-left"
             >
           <div className="flex  justify-start  items-center gap-2 ">
             <FaLinkedin size={30} className='fill-details' />
@@ -106,7 +106,7 @@ const Header = () => {
               href="https://github.com/kathe-dev"
               rel="noreferrer"
               target="_blank"
-              className="Clinton text-lg md:text-xl p-2 md:p-4 rounded-xl cursor-pointer hover:underline   text-details text-left"
+              className=" text-lg md:text-xl p-2 md:p-4 rounded-xl cursor-pointer hover:underline   text-details text-left"
             >
           <div className="flex  justify-start items-center gap-2 ">
             <FaGithubAlt size={30} className='fill-details' />
@@ -116,13 +116,13 @@ const Header = () => {
           </div>
           </a>
 
-          <h2 className='Clinton-Extra-Bold text-2xl md:text-3xl p-2 md:p-4 rounded-xl    text-details text-left'>
+          <h2 className='font-bold text-2xl md:text-3xl p-2 md:p-4 rounded-xl    text-details text-left'>
           Contacto
         </h2>
 
         <a
               href="mailto:kathramz25@gmail.com"
-              className="Clinton text-lg md:text-xl p-2 md:p-4 rounded-xl cursor-pointer hover:underline   text-details text-left"
+              className=" text-lg md:text-xl p-2 md:p-4 rounded-xl cursor-pointer hover:underline   text-details text-left"
             >
           <div className={`flex ${nav ? ' visible ' : ' hidden '} justify-start  items-center gap-2 `}>
             <FaEnvelope size={25} className='fill-details' />
@@ -136,7 +136,7 @@ const Header = () => {
               href="https://wa.me/573175479834"
               rel="noreferrer"
               target="_blank"
-              className="Clinton text-lg md:text-xl p-2 md:p-4 rounded-xl cursor-pointer hover:underline   text-details text-left"
+              className=" text-lg md:text-xl p-2 md:p-4 rounded-xl cursor-pointer hover:underline   text-details text-left"
             >
           <div className="flex  justify-start  items-center gap-2 ">
             <FaPhoneAlt size={25} className='fill-details' />
@@ -151,7 +151,7 @@ const Header = () => {
     </div>
 
 
-    <motion.div className={`Clinton-Extra-Bold transition ease-in-out duration-300  ${bgTransparent && nav ? ' bg-text bg-opacity-70 backdrop-filter backdrop-blur-lg text-details ' : bgTransparent ? ' bg-transparent text-text' : 'bg-text shadow-lg shadow-black/[0.03] bg-opacity-95 text-details'}  flex justify-between items-center h-24 mx-auto px-10 md:px-32  text-lg top-0 w-full `}
+    <motion.div className={`font-bold transition ease-in-out duration-300  ${bgTransparent && nav ? ' bg-text bg-opacity-70 backdrop-filter backdrop-blur-lg text-details ' : bgTransparent ? ' bg-transparent text-text' : 'bg-text shadow-lg shadow-black/[0.03] bg-opacity-95 text-details'}  flex justify-between items-center h-24 mx-auto px-10 md:px-32  text-lg top-0 w-full `}
     initial = {{ y: -100, opacity: 0}}
     animate = {{ y:0 , opacity: 1}}
     >
@@ -171,7 +171,7 @@ const Header = () => {
         </Link>
         ))}
       </ul> */}
-     <button className={` z-30 hidden md:flex   px-4 py-2 rounded-xl duration-300 ${bgTransparent && nav? 'hover:bg-details hover:text-text' : bgTransparent ? 'hover:bg-text hover:text-details' : 'hover:bg-details hover:text-text'} `} type='button' onClick={handleNav}> Menu </button>
+     <button className={` z-30 hidden md:flex  text-xl font-semibold  px-4 py-2 rounded-xl duration-300 ${bgTransparent && nav? 'hover:bg-details hover:text-text' : bgTransparent ? 'hover:bg-text hover:text-details' : 'hover:bg-details hover:text-text'} `} type='button' onClick={handleNav}> Menu </button>
 
      
 
