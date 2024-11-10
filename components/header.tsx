@@ -36,12 +36,12 @@ const Header = () => {
 
   // Array containing navigation items
   const navItems = [
-    { id: 1, text: 'Inicio' },
-    { id: 2, text: 'Tecnologias' },
-    { id: 3, text: 'Proyectos' },
-    { id: 4, text: 'Educacion' },
-    { id: 5, text: 'Experiencia laboral' },
-    { id: 6, text: 'Contacto' },
+    { id: 1, text: 'Home' },
+    { id: 2, text: 'Technologies' },
+    { id: 3, text: 'Projects' },
+    { id: 4, text: 'Education' },
+    { id: 5, text: 'Work Experience' },
+    { id: 6, text: 'Contact' },
   ];
 
   // Handle scroll position and visibility
@@ -148,7 +148,7 @@ const Header = () => {
             
           </div>
           </a>
-          <div className='flex w-[90vw] h-20 -ml-[5vw] p-2  md:hidden cursor-pointer text-details dark:text-darkdetails'>
+          <div className='flex w-[90vw] h-20 -ml-[5vw] p-2  md:hidden cursor-pointer text-details dark:text-darkdetails' >
           <ThemeSwitch />
           </div>
 
@@ -168,7 +168,7 @@ const Header = () => {
       </Link>
 
       {/* Desktop Navigation */}
-      <div className='md:flex gap-4 hidden '>
+      <div className='md:flex gap-4 hidden ' >
       <ThemeSwitch />
      <button className={` z-30 hidden md:flex items-center  text-xl font-semibold  px-4 py-2 rounded-xl duration-300 ${bgTransparent && nav? 'hover:bg-details hover:dark:bg-darkdetails hover:text-text hover:dark:text-darktext' : bgTransparent ? 'hover:bg-text hover:dark:bg-darktext  hover:text-details hover:dark:text-darkdetails' : 'hover:bg-details hover:dark:bg-darkdetails hover:text-text hover:dark:text-darktext'} `} type='button' onClick={handleNav}> Menu </button>
       </div>
