@@ -16,7 +16,7 @@ import { FaFileExcel } from "react-icons/fa6";
 
 export default function Technologies() {
   return (
-    <div id='Technologies' className='flex flex-col mt-48 gap-20 items-center justify-center  w-screen min-h-screen  '>
+    <div id='Technologies' className='flex flex-col pt-48 gap-20 items-center justify-center  w-screen min-h-screen  '>
         <h1 className='text-4xl font-bold'>Technologies</h1>
         <div className=' columns-1 md:columns-2 gap-20    md:pl-20 '>
             <div className='flex  items-center justify-start   gap-10 w-[70vw] md:w-[30vw] lg:w-[20vw] h-32'>

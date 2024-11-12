@@ -76,7 +76,7 @@ const Header = () => {
       <div className={` ease-in-out  transition-all h-[90vh]   flex md:flex-wrap md:flex-row flex-col justify-start md:justify-between  items-center   ${visible ? ' -mt-24 ' : ' mt-0 '}`}>
       <ul className='flex  md:flex-wrap md:flex-row flex-col md:w-[70vw] w-[90vw] py-4 md:py-10  justify-center border-b-2 md:border-b-0 border-details dark:border-darkdetails'>
         {navItems.map(item => (
-          <Link href={`/#${item.text}` } key={item.id} onClick={handleNav} >
+          <Link href={`/#${item.text.replace(/\s+/g, '-')}`} key={item.id} onClick={handleNav}>
           <li className=' text-xl md:text-3xl p-2 md:p-4 rounded-xl  cursor-pointer transition-all ease-in-out duration-200 text-details dark:text-darkdetails hover:scale-105 hover:text-background hover:dark:text-darkbackground text-left md:text-center'>
             {item.text}
           </li>
