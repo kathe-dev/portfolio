@@ -149,7 +149,9 @@ const Header = () => {
           </div>
           </a>
           <div className='flex w-[90vw] h-20 -ml-[5vw] p-2  md:hidden cursor-pointer text-details dark:text-darkdetails' >
+            <button className='' type='button' onClick={handleNav}> 
           <ThemeSwitch />
+          </button>
           </div>
 
           </div>

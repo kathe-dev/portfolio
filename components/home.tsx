@@ -14,7 +14,7 @@ export default function BackgroundGradientAnimationDemo() {
     <BackgroundGradientAnimation className="">
       <div  id="Inicio" className="absolute z-10 inset-0 flex items-center justify-center text-text dark:text-darktext font-bold  lg:pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl mb-32 mt-14 md:-mt-24">
         {/* <Parallax speed={-30}>   */}
-        <div className="flex flex-col md:flex-row items-center justify-center  gap-10 w-screen h-screen ">
+        <div className="flex flex-col md:flex-row items-center justify-center pt-28 md:pt-0  gap-10 w-screen h-screen ">
           <div className="flex w-[90vw] md:w-[20vw]  flex-col items-center justify-center gap-10">
             <h1 className="text-4xl font-bold ">Katherine Ramirez</h1>
             <Image src="/Images/kathe-icon-clean.png" alt="Logo" width={300} height={300} />
