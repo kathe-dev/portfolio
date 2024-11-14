@@ -1,6 +1,6 @@
 import React, { useState,useRef, useEffect } from 'react'
 import Image from 'next/image'
-import { video } from 'framer-motion/client';
+import {motion} from 'framer-motion'
 
 const projects = [
   { id: 1, name: 'GoBig Agency', link: 'https://www.gobigagency.co/', mediaSource: '/Videos/gobig2.mp4', poster: '/Images/gobigPoster.png' },
@@ -16,10 +16,18 @@ export default function Projects() {
   return (
 
     <div id='Projects' className='flex flex-col pt-48 gap-20 items-center justify-center w-screen min-h-screen'>
+       <motion.div initial={{ opacity: 0 }}
+       whileInView={{ opacity: 1 }}
+       viewport={{ once: false, amount: 0.5 }}
+       transition={{ duration: 1 }} >
       <h1 className='text-4xl font-bold'>Projects</h1>
+      </motion.div>
       <div className='grid grid-cols-1 gap-y-8 gap-x-32 md:grid-cols-2  md:pl-20'>
         {projects.map(proj => (
-          <div key={proj.id} className='flex items-center justify-center gap-10 w-[90vw] md:w-[30vw] lg:w-[20vw] h-full py-6 hover:scale-105 transition-all ease-in-out duration-300 px-4 rounded-xl border-2 border-text dark:border-darktext '>
+           <motion.div initial={{ opacity: 0 }}
+           whileInView={{ opacity: 1 }}
+           viewport={{ once: false, amount: 0.5 }}
+           transition={{ duration: 1 }}  key={proj.id} className='flex items-center justify-center gap-10 w-[90vw] md:w-[30vw] lg:w-[20vw] h-full py-6 hover:scale-105 transition-all ease-in-out duration-300 px-4 rounded-xl border-2 border-text dark:border-darktext '>
             <a href={proj.link} target='_blank' rel='noreferrer' className='gap-4 flex flex-col'  >
             {proj.mediaSource.endsWith('.mp4') ? (
                 <video
@@ -56,7 +64,7 @@ export default function Projects() {
               )}
             <h2 className='text-2xl text-center font-bold'>{proj.name}</h2>
             </a>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

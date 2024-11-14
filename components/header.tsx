@@ -120,16 +120,16 @@ const Header = () => {
           </a>
 
           <h2 className='font-bold text-2xl md:text-3xl p-2 md:p-4 rounded-xl    text-details dark:text-darkdetails text-left'>
-          Contacto
+          Contact
         </h2>
 
         <a
               href="mailto:kathramz25@gmail.com"
               className=" text-lg md:text-xl p-2 md:p-4 rounded-xl cursor-pointer hover:underline   text-details dark:text-darkdetails text-left"
             >
-          <div className={`flex ${nav ? ' visible ' : ' hidden '} justify-start  items-center gap-2 `}>
+          <div className={`flex justify-start  items-center gap-2 `}>
             <FaEnvelope size={25} className='fill-details dark:fill-darkdetails' />
-            <p className='flex w-[88vw] md:w-[28vw]'>
+            <p className='flex '>
             kathramz25@gmail.com
             </p>
           </div>

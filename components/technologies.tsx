@@ -3,6 +3,7 @@ import { FaReact, FaCss3Alt, FaHtml5, FaPython, FaGithub, FaWordpress } from "re
 import { SiTailwindcss, SiTypescript, SiPowerapps } from "react-icons/si";
 import { RiNextjsFill, RiJavascriptFill } from "react-icons/ri";
 import { FaFileExcel } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 const technologies = [
   { id: 1, name: 'React', icon: FaReact },
@@ -22,13 +23,21 @@ const technologies = [
 export default function Technologies() {
   return (
     <div id='Technologies' className='flex flex-col pt-48 gap-20 items-center justify-center w-screen min-h-screen'>
+       <motion.div initial={{ opacity: 0 }}
+       whileInView={{ opacity: 1 }}
+       viewport={{ once: false, amount: 0.5 }}
+       transition={{ duration: 1 }} >
       <h1 className='text-4xl font-bold'>Technologies</h1>
-      <div className='columns-1 md:columns-2 gap-20 md:pl-20'>
+      </motion.div>
+      <div className='grid  gap-y-8 gap-x-8 md:gap-x-32 grid-cols-2  md:pl-20'>
         {technologies.map(tech => (
-          <div key={tech.id} className='flex items-center justify-start gap-10 w-[70vw] md:w-[30vw] lg:w-[20vw] h-32'>
+           <motion.div initial={{ opacity: 0 }}
+           whileInView={{ opacity: 1 }}
+           viewport={{ once: false, amount: 0.5 }}
+           transition={{ duration: 1 }}  key={tech.id} className='flex items-center justify-center md:justify-start gap-10 w-[40vw] md:w-[30vw] lg:w-[20vw] h-32'>
             <tech.icon className='w-20 h-20' />
-            <h2 className='text-2xl font-bold'>{tech.name}</h2>
-          </div>
+            <h2 className='text-2xl font-bold hidden md:block'>{tech.name}</h2>
+          </motion.div>
         ))}
       </div>
     </div>
