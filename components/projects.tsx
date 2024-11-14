@@ -22,13 +22,17 @@ export default function Projects() {
                 <video
                 ref={videoRef => {
                   if (videoRef) {
-                    videoRef.onmouseenter = () => {
-                      videoRef.play();
-                    }
-                    videoRef.onmouseleave = () => {
-                      videoRef.pause();
-                      videoRef.currentTime = 0;
-                    };
+                    const playVideo = () => videoRef.play();
+                      const pauseVideo = () => {
+                        videoRef.pause();
+                        videoRef.currentTime = 0;
+                      };
+
+                      videoRef.onmouseenter = playVideo;
+                      videoRef.onmouseleave = pauseVideo;
+                      videoRef.onfocus = playVideo;
+                      videoRef.onblur = pauseVideo;
+                    
                   }
                 }}
                 className='w-full aspect-video rounded-xl shadow-lg shadow-text dark:shadow-darktext '
