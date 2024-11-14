@@ -24,7 +24,7 @@ export default function WorkExperience() {
            whileInView={{ opacity: 1 }}
            viewport={{ once: false, amount: 0.5 }}
            transition={{ duration: 1 }}  key={work.id}             className={`flex flex-row items-center justify-start gap-8 md:gap-20 w-[80vw] md:w-[50vw] lg:w-[40vw] h-full ${work.orientation === 'right' ? 'flex-row-reverse' : ''}`}>
-            <Image src={work.logo} alt={work.name} className='w-20 h-20' width={80} height={80} />
+            <Image src={work.logo} alt={work.name} className='w-32 h-20' width={80} height={80} />
             <div className={`flex flex-col gap-1 ${work.orientation === 'right' ? 'text-right' : ''}`}>
             <h2 className='text-2xl font-bold'>{work.name}</h2>
             <h3 className='text-xl font-bold'>{work.place}</h3>

@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Header from "@/components/header";
 import BackgroundGradientAnimationDemo from "@/components/home";
 import Technologies from "@/components/technologies";
@@ -30,7 +29,7 @@ export default function Home() {
 	}, []);
   
   return (
-    <div className="w-screen h-full bg-background dark:bg-darkbackground text-text dark:text-darktext  ">
+    <div className="w-screen h-full Poppins bg-gradient-to-r from-background to-details dark:from-darkbackground dark:to-darkdetails text-text dark:text-darktext">
       <Header />
       <BackgroundGradientAnimationDemo />
       <Technologies />
