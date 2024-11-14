@@ -3,9 +3,9 @@ import Image from 'next/image'
 import { video } from 'framer-motion/client';
 
 const projects = [
-  { id: 1, name: 'GoBig Agency', link: 'https://www.gobigagency.co/', mediaSource: '/Videos/gobig.mp4' },
-  { id: 2, name: 'NMS Shipping', link: 'https://www.nms-shipping.com/', mediaSource: '/Videos/nms.mp4' },
-  { id: 3, name: 'Nile Dynamics', link: 'https://www.niledynamics.net/', mediaSource: '/Videos/nile.mp4' },
+  { id: 1, name: 'GoBig Agency', link: 'https://www.gobigagency.co/', mediaSource: '/Videos/gobig2.mp4', poster: '/Images/gobigPoster.png' },
+  { id: 2, name: 'NMS Shipping', link: 'https://www.nms-shipping.com/', mediaSource: '/Videos/nms2.mp4', poster: '/Images/nmsPoster.png' },
+  { id: 3, name: 'Nile Dynamics', link: 'https://www.niledynamics.net/', mediaSource: '/Videos/nile2.mp4', poster: '/Images/nilePoster.png' },
   { id: 4, name: 'Sabajon Apolo (work in progress)', link: 'https://sabajon-apolo.vercel.app/', mediaSource: '/Images/sabajon.png' },
   
 ];
@@ -38,9 +38,10 @@ export default function Projects() {
                 className='w-full aspect-video rounded-xl shadow-lg shadow-text dark:shadow-darktext '
                 muted
                 loop
-                preload='auto'
+                preload='metadata'
+                poster={proj.poster}
               >
-                  <source src={proj.mediaSource} type='video/mp4' />
+                  <source src=  {proj.mediaSource} type='video/mp4' />
                 </video>
               ) : (
                 <Image src={proj.mediaSource} alt={proj.name} className='w-full aspect-video rounded-xl shadow-lg shadow-text dark:shadow-darktext ' width={640} height={360} />
