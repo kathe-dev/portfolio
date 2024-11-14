@@ -28,10 +28,12 @@ export default function Projects() {
                         videoRef.currentTime = 0;
                       };
 
-                      videoRef.onmouseenter = playVideo;
+                      /* videoRef.onmouseenter = playVideo;
                       videoRef.onmouseleave = pauseVideo;
                       videoRef.onfocus = playVideo;
-                      videoRef.onblur = pauseVideo;
+                      videoRef.onblur = pauseVideo; */
+                      videoRef.onpointerenter = playVideo;
+                      videoRef.onpointerleave = pauseVideo;
                     
                   }
                 }}
