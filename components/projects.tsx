@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useState,useRef, useEffect } from 'react'
 import Image from 'next/image'
 import { video } from 'framer-motion/client';
 
@@ -11,13 +11,16 @@ const projects = [
 ];
 
 export default function Projects() {
+
+
   return (
+
     <div id='Projects' className='flex flex-col pt-48 gap-20 items-center justify-center w-screen min-h-screen'>
       <h1 className='text-4xl font-bold'>Projects</h1>
       <div className='grid grid-cols-1 gap-y-8 gap-x-32 md:grid-cols-2  md:pl-20'>
         {projects.map(proj => (
           <div key={proj.id} className='flex items-center justify-center gap-10 w-[90vw] md:w-[30vw] lg:w-[20vw] h-full py-6 hover:scale-105 transition-all ease-in-out duration-300 px-4 rounded-xl border-2 border-text dark:border-darktext '>
-            <a href={proj.link} target='_blank' rel='noreferrer' className='gap-4 flex flex-col'>
+            <a href={proj.link} target='_blank' rel='noreferrer' className='gap-4 flex flex-col'  >
             {proj.mediaSource.endsWith('.mp4') ? (
                 <video
                 ref={videoRef => {
@@ -28,12 +31,15 @@ export default function Projects() {
                         videoRef.currentTime = 0;
                       };
 
-                      /* videoRef.onmouseenter = playVideo;
+                      videoRef.onmouseenter = playVideo;
                       videoRef.onmouseleave = pauseVideo;
-                      videoRef.onfocus = playVideo;
-                      videoRef.onblur = pauseVideo; */
-                      videoRef.onpointerenter = playVideo;
-                      videoRef.onpointerleave = pauseVideo;
+                      videoRef.focus = playVideo;
+                      videoRef.blur = pauseVideo;
+                      videoRef.ontouchstart = playVideo;
+                      videoRef.ontouchend = pauseVideo;
+                      videoRef.onclick = playVideo;
+                      /* videoRef.onpointerenter = playVideo;
+                      videoRef.onpointerleave = pauseVideo; */
                     
                   }
                 }}
