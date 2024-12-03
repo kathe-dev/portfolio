@@ -18,7 +18,7 @@ export default function WorkExperience() {
        transition={{ duration: 1 }} >
       <h1 className='text-4xl font-bold'>Work Experience</h1>
       </motion.div>
-      <div className='grid grid-cols-1 gap-y-8 gap-x-32 md:grid-cols-1  md:pl-20'>
+      <div className='grid grid-cols-1 gap-y-12 gap-x-32 md:grid-cols-1  md:pl-20'>
         {works.map(work => (
            <motion.div initial={{ opacity: 0 }}
            whileInView={{ opacity: 1 }}
