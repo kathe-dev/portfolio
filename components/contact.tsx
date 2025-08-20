@@ -52,7 +52,7 @@ export default function Contact() {
           </a>
 
           <a
-              href="https://wa.me/573175479834"
+              href="https://wa.me/573150658334"
               rel="noreferrer"
               target="_blank"
               className=" text-xl md:text-2xl p-2 md:p-4 rounded-xl cursor-pointer hover:underline    text-left"
@@ -60,7 +60,7 @@ export default function Contact() {
           <div className="flex  justify-start  items-center gap-2 ">
             <FaPhoneAlt size={25} className='fill-text dark:fill-darktext' />
             
-            (+57) 317 547 9834
+            (+57) 315 065 8334
             
           </div>
           </a>

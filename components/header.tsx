@@ -136,7 +136,7 @@ const Header = () => {
           </a>
 
           <a
-              href="https://wa.me/573175479834"
+              href="https://wa.me/573150658334"
               rel="noreferrer"
               target="_blank"
               className=" text-lg md:text-xl p-2 md:p-4 rounded-xl cursor-pointer hover:underline   text-details dark:text-darkdetails text-left"
@@ -144,7 +144,7 @@ const Header = () => {
           <div className="flex  justify-start  items-center gap-2 ">
             <FaPhoneAlt size={25} className='fill-details dark:fill-darkdetails' />
             
-            (+57) 317 547 9834
+            (+57) 315 065 8334
             
           </div>
           </a>
