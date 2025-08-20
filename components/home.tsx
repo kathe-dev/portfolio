@@ -25,7 +25,8 @@ export default function BackgroundGradientAnimationDemo() {
             <Image src="/Images/kathe-icon-clean.png" alt="Logo" width={300} height={300} />
           </div>
           <div className="flex w-[90vw] md:w-[40vw] items-center justify-start" >
-            <p className="text-2xl font-bold text-left"> Hi! I'm Katherine, a <b className="text-darkdetails dark:text-details"> web developer</b>, with a degree in <b className="text-darkdetails dark:text-details">Computer  Science</b>. I am interested in <b className="text-darkdetails dark:text-details">UX/UI design, art, and video games</b>. I enjoy working in multidisciplinary teams, where I can learn new abilities and new perspectives. I think that web development is more interesting when it's interactive and captures  the attention with eye-catching elements.
+            <p className="text-2xl font-bold text-left"> Hi! I'm Katherine, a <b className="text-darkdetails dark:text-details"> Web Developer </b>with a focus on <b className="text-darkdetails dark:text-details"> Front-End development</b>. I'm passionate about UX/UI design, art, and video games. I enjoy working in multidisciplinary teams, where I can learn new skills and gain new perspectives. Currently, I'm pursuing a <b className="text-darkdetails dark:text-details"> postgraduate specialization in Software Engineering</b>. I love learning new things and believe there's nothing I can't do—only things I can't do yet.
+
             </p>
           </div>
       </motion.div>

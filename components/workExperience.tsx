@@ -4,9 +4,10 @@ import { motion } from 'framer-motion'
 
 
 const works = [
-  { id: 1, name: 'Web Developer', place: 'Freelancer', time: 'May 2024 - Present', desciption: 'Develop websites that express the essence of the client, using different technologies that adapt to the needs and requirements.', logo: '/Images/kathe-icon-clean.png', orientation: 'left' },
-  { id: 2, name: 'Web Developer', place: 'Enjambre group', time: 'March 2024 - May 2024', desciption: 'Develop and maintain websites in WordPress and Angular, as well as maintain customer contact with clients to meet their needs.', logo: '/Images/enjambre.png', orientation: 'right' },
-  { id: 3, name: 'Internship', place: 'Banco de occidente', time: 'August 2023 - February 2024', desciption: "Receive, manage, and resolve IT support requests, as well as develop an application to improve the experience of the area's performance appraisal process.", logo: '/Images/BancodeOccidente.webp', orientation: 'left' },
+  { id: 1, name: 'Web Developer', place: 'Orbidi', time: 'January 2025 - Present', desciption: "Implement websites using WordPress for SMEs and freelancers within the framework of the Spanish government's digital kit project.", logo: '/Images/orbidi.png', orientation: 'right' },
+  { id: 2, name: 'Web Developer', place: 'Freelancer', time: 'May 2024 - Present', desciption: 'Develop websites that express the essence of the client, using different technologies that adapt to the needs and requirements.', logo: '/Images/kathe-icon-clean.png', orientation: 'left' },
+  { id: 3, name: 'Web Developer', place: 'Enjambre group', time: 'March 2024 - May 2024', desciption: 'Develop and maintain websites in WordPress and Angular, as well as maintain customer contact with clients to meet their needs.', logo: '/Images/enjambre.png', orientation: 'right' },
+  { id: 4, name: 'Internship', place: 'Banco de occidente', time: 'August 2023 - February 2024', desciption: "Receive, manage, and resolve IT support requests, as well as develop an application to improve the experience of the area's performance appraisal process.", logo: '/Images/BancodeOccidente.webp', orientation: 'left' },
 ]
 
 export default function WorkExperience() {
